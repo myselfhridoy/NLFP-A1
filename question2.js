@@ -1,16 +1,17 @@
 function getDayType(d){
-    const day = d;
+    const day = d.toUpperCase();
+    
     
     switch (day){
-        case "Friday":
+        case "FRIDAY":
         console.log("Weekend");
         break;
-        case "Saturday":
-        case "Sunday":
-        case "Monday":
-        case "Tuesday":
-        case "Wednesday":
-        case "Thursday":
+        case "SATURDAY":
+        case "SUNDAY":
+        case "MONDAY":
+        case "TUESDAY":
+        case "WEDNESDAY":
+        case "THURSDAY":
         console.log("Working Day");
         break;
         default:
