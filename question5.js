@@ -1,4 +1,4 @@
-function getChaseVerdict(target, scored, ballsLeft){
+const getChaseVerdict=(target, scored, ballsLeft)=>{
     const runsNeeded = target - scored;
     const requiredRate = (runsNeeded / ballsLeft) * 6;
     if(runsNeeded<=0){
@@ -17,4 +17,3 @@ function getChaseVerdict(target, scored, ballsLeft){
         console.log(`Need ${runsNeeded} runs in ${ballsLeft} balls | Almost Impossible`)
     }
 }
-
